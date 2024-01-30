@@ -1,33 +1,59 @@
-header {
-  
+header {  
+  height: 75px;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
-header ul.fi {
-  
+header ul.fi {  
+  width: 50%;
+  gap: 50px;
+  height: 100%;
+  align-items: center;
 }
 header ul.fi li {
   
 }
-header ul.fi li a {
-  
+header ul.fi li a {  
+  color: white;
 }
-header h2 {
-  
+header h2 {  
+  font-size: 0;
+  background-image: url(../img/logo_white.png);
+  width: 121px;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 header h2 a {
   
 }
-header ul.sc {
-  
+header ul.sc {  
+  width: 50%;
+  justify-content: end;
+  gap: 30px;
+  height: 100%;
+  align-items: center;
 }
-header ul.sc li {
-  
+header ul.sc li {  
+  color: white;
 }
-header ul.sc p {
-  
+header ul.sc p {  
+  font-size: 0;
+  background-image: url(../img/search.svg);
+  width: 24px;
+  height: 24px;
 }
 header ul.sc p a {
-  
+
 }
-header ul.sc a {
-  
+header ul.sc a {  
+  font-size: 0;
+  background-image: url(../img/menu.svg);
+  width: 24px;
+  height: 24px;
 }
