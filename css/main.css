@@ -62,12 +62,22 @@ section#best div.wrap div.cuatro p span {
 section#instagram {
   
 }
-section#instagram div.flex {
-  
+section#instagram div.flex {  
+  justify-content: center;
+  align-items: center;
 }
-section#instagram div.flex h2 {
-  
+section#instagram div.flex h2 {  
+  font-weight: 700;
 }
-section#instagram div.flex p {
-  
+section#instagram div.flex p {  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+section#instagram div.flex p::before{
+  content: "";
+  background-image: url(../img/insta_icon.svg);
+  display: block;
+  width: 25px;
+  height: 25px;
 }

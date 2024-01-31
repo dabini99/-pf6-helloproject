@@ -16,18 +16,22 @@ div#title div.text::before{
 div#title div.text .tu{
   position: absolute;
   bottom: 19%;
-  right: 12%;
+  right: 20%;
   color: white;
   line-height: 3;
 }
 div#title div.text .tu h2{   
   line-height: 3;
+  font-weight: 700;
 }
 div#title div.text .tu p{   
-  display: flex;
+  display: block;
+  font-weight: 300;
 }
-div#title div.text .tu p span{
-   
+div#title div.text .tu p span{   
+  display: block;
+  line-height: 5;
+  font-weight: 600;
 }
 div#title div.text .tu a{   
   color: white;
