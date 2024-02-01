@@ -1,0 +1,31 @@
+footer{
+  background-color: #000000;
+}
+footer div.wrap{
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  max-width: 1826px;
+}
+footer div.wrap h2{     
+  font-size: 0;
+  background-image: url(../img/logo_white.png);
+  width: 150px;
+  height: 92px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer div.wrap p{   
+  line-height: 2;
+}
+footer div.wrap address{   
+  line-height: 2;
+}
+footer div.wrap .flex{   
+  gap: 20px;
+}
+footer div.wrap .flex a{   
+  color: white;
+  line-height: 2;
+  display: block;
+}

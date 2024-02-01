@@ -27,7 +27,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
     <script type="text/javascript">
-        
+        $(document).ready(
+            function(){
+                $("section#best div.wrap div.dos,section#best div.wrap div.tress,section#best div.wrap div.cuatro").wrapAll("<div class='groupuno'></div>");
+            }
+        );
+    </script>
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.groupuno').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            });
+        }
+        );
     </script>
 </head>
 <body>
@@ -76,8 +94,10 @@
         <!-- best -->
         <section id="best" class="paddingT50 paddingB50 vh100">
             <div class="wrap">
-                <h2>Best Item</h2>
-                <p>헬로 프로젝트 베스트 아이템</p>
+                <div class="null">
+                    <h2 class="h4">Best Item</h2>
+                    <p>헬로 프로젝트 베스트 아이템</p>
+                </div>
                 <div class="uno">
                     <h3>헬로 프로젝트 에어 캔들 탈취제</h3>
                     <p>10% 18,000원<span>19,900원</span></p>
@@ -87,7 +107,7 @@
                     <p>10% 18,000원<span>19,900원</span></p>
                 </div>
                 <div class="tress">
-                    <h3>헬로 프로젝트 클린 에어 프러젝트 SET 우드 프레쉬너 + 에어캔들 탈취제</h3>
+                    <h3>헬로 프로젝트 클린 에어 프러젝트 SET <span>우드 프레쉬너 + 에어캔들 탈취제</span> </h3>
                     <p>9% 29,000원<span>33,000원</span></p>
                 </div>
                 <div class="cuatro">
@@ -110,10 +130,12 @@
             <h2>logo</h2>
             <p>Copyright ⓒ hello project. All Rights Reserved.</p>
             <p>기업은행 63301268201013 예금주 : (주)아르케인터내셔날</p>
-            <adress> 법인명(상호) : (주) 아르케인터내셔날 | 대표자(성명) : 박진우, 박성은 | 사업자 등록번호 안내 : [220-88-21117] | 통신판매업 신고 제2011 서울강남 2058호[사업자정보확인] | 전화 : 1577-2039 | 주소 : 06246 서울특별시 강남구 논현로 419 14층(역삼동, PMK 빌딩) | 개인정보보호책임자 : 박성은(hello@helloproject.co.kr) | Contact hello@helloproject.co.kr for more information.</adress>
-            <a href="">이용약관</a>
-            <a href="">이용안내</a>
-            <a href="">개인정보처리방침</a>
+            <address> 법인명(상호) : (주) 아르케인터내셔날 | 대표자(성명) : 박진우, 박성은 | 사업자 등록번호 안내 : [220-88-21117] | 통신판매업 신고 제2011 서울강남 2058호[사업자정보확인] | 전화 : 1577-2039 | 주소 : 06246 서울특별시 강남구 논현로 419 14층(역삼동, PMK 빌딩) | 개인정보보호책임자 : 박성은(hello@helloproject.co.kr) | Contact hello@helloproject.co.kr for more information.</address>
+            <div class="flex">
+                <a href="">이용약관</a>
+                <a href="">이용안내</a>
+                <a href="">개인정보처리방침</a>
+            </div>
         </div>
     </footer>
 </body>

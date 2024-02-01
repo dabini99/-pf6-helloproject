@@ -1,17 +1,38 @@
-section#best {
+section#best {  
+  min-height: 1000px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+section#best div.wrap {  
+  display: grid;
+  /*! grid-template-columns: 850px 850px; */
+  grid-template-rows: auto auto;
+  grid-template-columns: 50% 50%;
+}
+section#best div.wrap .null{
+  text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+section#best div.wrap .null h2 {
   
 }
-section#best div.wrap {
+section#best div.wrap .null p {
   
 }
-section#best div.wrap h2 {
-  
+section#best div.wrap div.uno {  
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-section#best div.wrap p {
-  
-}
-section#best div.wrap div.uno {
-  
+section#best div.wrap div.uno::before{
+  content: "";
+  background-image: url(../img/2-1.jpg);
+  display: block;
+  height: 800px;
+  width: 600px;
 }
 section#best div.wrap div.uno h3 {
   
@@ -22,8 +43,21 @@ section#best div.wrap div.uno p {
 section#best div.wrap div.uno p span {
   
 }
+section#best div.wrap .groupuno{  
+  grid-column: 2;
+  grid-row: 2;
+}
 section#best div.wrap div.dos {
   
+}
+section#best div.wrap div.dos::before{
+  content: "";
+  display: block;
+  background-image: url(../img/2-1.jpg);
+  height: 418px;
+  width: 310px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 section#best div.wrap div.dos h3 {
   
@@ -37,8 +71,20 @@ section#best div.wrap div.dos p span {
 section#best div.wrap div.tress {
   
 }
+section#best div.wrap div.tress::before{
+  content: "";
+  display: block;
+  background-image: url(../img/2-2.jpg);
+  height: 418px;
+  width: 310px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 section#best div.wrap div.tress h3 {
-  
+  display: block;
+}
+section#best div.wrap div.tress h3 span {
+  display: block;
 }
 section#best div.wrap div.tress p {
   
@@ -48,6 +94,15 @@ section#best div.wrap div.tress p span {
 }
 section#best div.wrap div.cuatro {
   
+}
+section#best div.wrap div.cuatro::before{
+  content: "";
+  display: block;
+  background-image: url(../img/2-3.jpg);
+  height: 418px;
+  width: 310px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 section#best div.wrap div.cuatro h3 {
   
