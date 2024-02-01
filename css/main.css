@@ -13,12 +13,13 @@ section#best div.wrap .null{
   text-align: center;
   grid-column: 1 / span 2;
   grid-row: 1;
+  padding: 20px 0;
 }
-section#best div.wrap .null h2 {
-  
+section#best div.wrap .null h2 {  
+  font-weight: 700;
 }
-section#best div.wrap .null p {
-  
+section#best div.wrap .null p {  
+  line-height: 3;
 }
 section#best div.wrap div.uno {  
   grid-column: 1;
@@ -34,20 +35,25 @@ section#best div.wrap div.uno::before{
   height: 800px;
   width: 600px;
 }
-section#best div.wrap div.uno h3 {
-  
+section#best div.wrap div.uno h3 {  
+  padding-top: 20px;
+  line-height: 2;
+  font-weight: 300;
+  font-size: 20px;
 }
-section#best div.wrap div.uno p {
-  
+section#best div.wrap div.uno p {  
+  font-weight: 700;
+  font-size: 18px;
 }
-section#best div.wrap div.uno p span {
-  
+section#best div.wrap div.uno p span {  
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
 }
 section#best div.wrap .groupuno{  
   grid-column: 2;
   grid-row: 2;
 }
-section#best div.wrap div.dos {
+section#best div.wrap div.dos {  
   
 }
 section#best div.wrap div.dos::before{
@@ -60,15 +66,20 @@ section#best div.wrap div.dos::before{
   background-repeat: no-repeat;
 }
 section#best div.wrap div.dos h3 {
-  
+  padding-top: 20px;
+  line-height: 2;
+  font-weight: 300;
+  font-size: 20px;
 }
-section#best div.wrap div.dos p {
-  
+section#best div.wrap div.dos p {  
+  font-weight: 700;
+  font-size: 18px;
 }
-section#best div.wrap div.dos p span {
-  
+section#best div.wrap div.dos p span { 
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
 }
-section#best div.wrap div.tress {
+section#best div.wrap div.tress {  
   
 }
 section#best div.wrap div.tress::before{
@@ -82,17 +93,24 @@ section#best div.wrap div.tress::before{
 }
 section#best div.wrap div.tress h3 {
   display: block;
+  padding-top: 20px;
+  line-height: 2;
+  font-weight: 300;
+  font-size: 20px;
 }
 section#best div.wrap div.tress h3 span {
   display: block;
 }
 section#best div.wrap div.tress p {
-  
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 }
-section#best div.wrap div.tress p span {
-  
+section#best div.wrap div.tress p span {  
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
 }
-section#best div.wrap div.cuatro {
+section#best div.wrap div.cuatro {  
   
 }
 section#best div.wrap div.cuatro::before{
@@ -104,14 +122,19 @@ section#best div.wrap div.cuatro::before{
   background-size: contain;
   background-repeat: no-repeat;
 }
-section#best div.wrap div.cuatro h3 {
-  
+section#best div.wrap div.cuatro h3 {  
+  padding-top: 20px;
+  line-height: 2;
+  font-weight: 300;
+  font-size: 20px;
 }
 section#best div.wrap div.cuatro p {
-  
+  font-weight: 700;
+  font-size: 18px;
 }
-section#best div.wrap div.cuatro p span {
-  
+section#best div.wrap div.cuatro p span {  
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
 }
 
 section#instagram {
