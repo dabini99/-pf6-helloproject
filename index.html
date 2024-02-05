@@ -30,6 +30,18 @@
         $(document).ready(
             function(){
                 $("section#best div.wrap div.dos,section#best div.wrap div.tress,section#best div.wrap div.cuatro").wrapAll("<div class='groupuno'></div>");
+                /* 햄버거 버튼 클릭-> 대메뉴 보이기 */
+                $("header ul.sc a").click(function(){
+                    // smenu에 slideShow 클래스 붙이기 해야함
+                    $("header .smenu .menu1").toggleClass("slideShow");
+                    return false;
+                });
+                $("header .smenu a.top").wrapAll("<div class='topAll'></div>");
+                // 대메뉴 클릭하면 서브 메뉴 펼치기
+                $("header .smenu .msub").click(
+                    function(){
+                        $(this).toggleClass("subColor");
+                    });
             }
         );
     </script>
@@ -42,8 +54,15 @@
             $('.groupuno').slick({
                 infinite: true,
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000
             });
+            // $('div#title div.text').slick({
+            //     infinite: true,
+            //     slidesToShow: 1,
+            //     slidesToScroll: 1
+            // });
         }
         );
     </script>
@@ -64,6 +83,30 @@
             <p><a href="">돋보기</a></p>
             <a href="">메뉴</a>
         </ul>
+        <div class="smenu hide">
+            <div class="menu1">
+                <a href="" class="top">LOGIN</a>
+                <a href="" class="top">JOIN</a>
+                <div class="msub">
+                    <h3>PRODUCT</h3>
+                    <ul class="sub">
+                        <li><a href="">CLEAN AIR PROJECT</a></li>
+                    </ul>
+                </div>
+                <div class="msub">
+                    <h3>CUSTOMER CARE</h3>
+                    <ul class="sub">
+                        <li><a href="">NOTICE</a></li>
+                        <li><a href="">REVIEW</a></li>
+                        <li><a href="">Q&A</a></li>
+                    </ul>
+                </div>
+                <h4>CUSTOMER CENTER</h4>
+                <p>TEL. 15577-2039</p>
+                <p>E-MAIL: hello@helloproject.co.kr</p>
+                <a href="" class="ins">인스타그램</a>
+            </div>
+        </div>
     </header>
     <!-- 타이틀영역 -->
     <div id="title" class="vh100">
@@ -92,7 +135,7 @@
     <!-- 메인영역 -->
     <main>
         <!-- best -->
-        <section id="best" class="paddingT50 paddingB50 vh100">
+        <section id="best" class="paddingT50 paddingB50">
             <div class="wrap">
                 <div class="null">
                     <h2 class="h4">Best Item</h2>
