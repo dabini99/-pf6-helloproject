@@ -32,15 +32,30 @@
                 $("section#best div.wrap div.dos,section#best div.wrap div.tress,section#best div.wrap div.cuatro").wrapAll("<div class='groupuno'></div>");
                 /* 햄버거 버튼 클릭-> 대메뉴 보이기 */
                 $("header ul.sc a").click(function(){
-                    // smenu에 slideShow 클래스 붙이기 해야함
-                    $("header .smenu .menu1").toggleClass("slideShow");
+                    //서브메뉴 보이게 하기
+                    $("header .smenu").show();
+                    return false;
+                });
+                //주변 누르면 서브메뉴 안보이게 하기
+                $("div#title").click(function(){
+                    //서브메뉴 보이게 하기
+                    $("header .smenu").hide();
                     return false;
                 });
                 $("header .smenu a.top").wrapAll("<div class='topAll'></div>");
+                $("header .smenu .msub").wrapAll("<div class='jgroup'></div>");
                 // 대메뉴 클릭하면 서브 메뉴 펼치기
                 $("header .smenu .msub").click(
                     function(){
-                        $(this).toggleClass("subColor");
+                        //서브 메뉴 열리기
+                        $(this).children("ul").slideToggle();
+                        $(this).siblings().children("ul").slideUp();
+                        //플러스 버튼 돌아가라
+                        //$(this).toggleClass("subColor");
+                        //$(this).toggleClass("subColor");
+                        // $(this).parent().siblings().children("h2").removeClass("subColor");
+                        // $(this).next().slideToggle();
+                        // $(this).parent().siblings().children("li").slideUp();
                     });
             }
         );
