@@ -77,7 +77,10 @@ section#best div.wrap div.dos p {
 }
 section#best div.wrap div.dos p span { 
   text-decoration: line-through;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
+  display: block;
+  color: #ccc;
+  font-weight: 200;
 }
 section#best div.wrap div.tress {  
   
@@ -108,7 +111,10 @@ section#best div.wrap div.tress p {
 }
 section#best div.wrap div.tress p span {  
   text-decoration: line-through;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
+  display: block;
+  color: #ccc;
+  font-weight: 200;
 }
 section#best div.wrap div.cuatro {  
   
@@ -134,7 +140,10 @@ section#best div.wrap div.cuatro p {
 }
 section#best div.wrap div.cuatro p span {  
   text-decoration: line-through;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
+  display: block;
+  color: #ccc;
+  font-weight: 200;
 }
 
 section#instagram {

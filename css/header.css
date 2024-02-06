@@ -113,7 +113,7 @@ header .smenu .msub h3::before{
   transition: 0.5s;
 }
 .subColor{
-  color: yellow;
+  color: yellow;  
 }
 header .smenu .msub ul{  
   display: none;
