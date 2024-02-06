@@ -112,18 +112,15 @@ header .smenu .msub h3::before{
   order: 2;
   transition: 0.5s;
 }
-header .smenu .msub h3.subColor::before{
-  transform: rotate(-270deg);
-}
 .subColor{
-  color: black;
+  color: yellow;
 }
 header .smenu .msub ul{  
   display: none;
   width: 100%;
 }
-header .smenu .msub ul li{
-  
+header .smenu .msub ul li{  
+  line-height: 3;
 }
 header .smenu .msub ul li a{
   
