@@ -13,6 +13,20 @@ div#title div.text::before{
   width: 100%;
   height: 100%;
 }
+div#title div.text:nth-child(2)::before{
+  content: "";
+  background-image: url(../img/2.jpg);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+div#title div.text:nth-child(3)::before{
+  content: "";
+  background-image: url(../img/3.jpg);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 div#title div.text .tu{
   position: absolute;
   bottom: 19%;
