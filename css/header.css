@@ -150,6 +150,7 @@ header .smenu a.ins{
   background-size: contain;
   margin-top: 20px;
 }
+/* 헤더 색상 변경 */
 .headerFix{
   position: fixed;
   z-index: 1;
@@ -169,4 +170,10 @@ header.headerFix ul.sc li{
 }
 header.headerFix ul.fi li a{
   color: black;
+}
+header.headerFix ul.sc p{
+  background-image: url(../img/search_black.svg);
+}
+header.headerFix ul.sc a{
+  background-image: url(../img/menu_black.svg);
 }
