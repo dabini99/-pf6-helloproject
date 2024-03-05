@@ -9,6 +9,13 @@ header {
   left: 0;
   z-index: 1;
 }
+header .headerI{
+  height: 100%;
+  display: flex;
+  max-width: 1712.7px;
+  width: 100%;
+  margin: 0 auto;
+}
 header ul.fi {  
   width: 50%;
   gap: 50px;
@@ -142,4 +149,24 @@ header .smenu a.ins{
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 20px;
+}
+.headerFix{
+  position: fixed;
+  z-index: 1;
+  max-width: 1903px;
+  /*! background-color: white; */
+  top: 0;
+  /*! width: 100%; */
+  margin: 0;
+  /*! left: calc((100% - 1712.7px) / 2); */
+  background-color: white;
+}
+header.headerFix h2{  
+  background-image: url(../img/logo.png);
+}
+header.headerFix ul.sc li{
+  color: black;
+}
+header.headerFix ul.fi li a{
+  color: black;
 }

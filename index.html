@@ -44,6 +44,8 @@
                 });
                 $("header .smenu a.top").wrapAll("<div class='topAll'></div>");
                 $("header .smenu .msub").wrapAll("<div class='jgroup'></div>");
+                $("header > *").wrapAll("<div class='headerI flax'></div>");
+                
                 // 대메뉴 클릭하면 서브 메뉴 펼치기
                 $("header .smenu .msub").click(
                     function(){
@@ -52,11 +54,15 @@
                         $(this).siblings().children("ul").slideUp();
                         //플러스 버튼이 마이너스 버튼으로 변경
                         $(this).toggleClass("subColor");
-                        //$(this).toggleClass("subColor");
-                        // $(this).parent().siblings().children("h2").removeClass("subColor");
-                        // $(this).next().slideToggle();
-                        // $(this).parent().siblings().children("li").slideUp();
                     });
+                $(window).scroll(function(){
+                    //헤더 슬라이드 고정 및 색상 바꾸기
+                    if($(window).scrollTop()>$("header").height()){
+                        $("header").addClass("headerFix");
+                    }else{
+                        $("header").removeClass("headerFix");
+                    }
+                });
             }
         );
     </script>
@@ -81,11 +87,6 @@
                 autoplay: true,
                 autoplaySpeed: 2000
             });
-            // $('div#title div.text').slick({
-            //     infinite: true,
-            //     slidesToShow: 1,
-            //     slidesToScroll: 1
-            // });
         }
         );
     </script>
