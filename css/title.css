@@ -30,25 +30,33 @@ div#title div.text:nth-child(3)::before{
 div#title div.text .tu{
   position: absolute;
   bottom: 19%;
-  right: 20%;
+  right: 8%;
   color: white;
   line-height: 3;
 }
 div#title div.text .tu h2{   
-  line-height: 3;
+  line-height: 1.5;
   font-weight: 700;
 }
 div#title div.text .tu p{   
   display: block;
   font-weight: 300;
+  padding-top: 10px;
 }
 div#title div.text .tu p span{   
   display: block;
-  line-height: 5;
+  line-height: 2;
   font-weight: 600;
 }
 div#title div.text .tu a{   
   color: white;
   border: 1px solid white;
   padding: 10px 20px;
+}
+.slick-next{
+  right: 48px !important;
+}
+.slick-prev{
+  left: 48px !important;
+  z-index: 1;
 }

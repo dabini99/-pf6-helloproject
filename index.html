@@ -34,12 +34,15 @@
                 $("header ul.sc a").click(function(){
                     //서브메뉴 보이게 하기
                     $("header .smenu").show();
+                    //배경 흐리게 만들기
+                    $(".oc").show();
                     return false;
                 });
                 //주변 누르면 서브메뉴 안보이게 하기
-                $("div#title").click(function(){
+                $("footer .oc").click(function(){
                     //서브메뉴 보이게 하기
                     $("header .smenu").hide();
+                    $(".oc").hide();
                     return false;
                 });
                 $("header .smenu a.top").wrapAll("<div class='topAll'></div>");
@@ -54,6 +57,7 @@
                         $(this).siblings().children("ul").slideUp();
                         //플러스 버튼이 마이너스 버튼으로 변경
                         $(this).toggleClass("subColor");
+                        
                     });
                 $(window).scroll(function(){
                     //헤더 슬라이드 고정 및 색상 바꾸기
@@ -63,6 +67,7 @@
                         $("header").removeClass("headerFix");
                     }
                 });
+                
             }
         );
     </script>
@@ -86,7 +91,7 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
-                arrows: false
+                arrows: true
             });
         }
         );
@@ -138,7 +143,7 @@
         <div class="text">
             <div class="tu">
                 <h2 class="h4">Air Candle</h2>
-                <p>냄새 OFF, 향기 ON <span>태우지 않고 그대로, 에어캔들 탈취제</span></p>
+                <p>냄새 OFF, 향기 ON <span class="h3">태우지 않고 그대로, 에어캔들 탈취제</span></p>
                 <a href="">MORE</a>
             </div>
         </div>
@@ -205,6 +210,7 @@
                 <a href="">개인정보처리방침</a>
             </div>
         </div>
+        <div class="oc"></div>
     </footer>
 </body>
 </html>

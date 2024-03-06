@@ -70,9 +70,10 @@ header .smenu{
   top: 0;
   background-color: white;
   width: 20%;
-  height: 800px;
+  height: 100vh;
   left: -95.15px;
   /*! left: calc(-20% + (-95.15px)); */
+  z-index: 2;
 }
 header .smenu .menu1{
   
@@ -176,4 +177,15 @@ header.headerFix ul.sc p{
 }
 header.headerFix ul.sc a{
   background-image: url(../img/menu_black.svg);
+}
+/* 배경 */
+header .headerI .oc{
+  display: block;
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -95px;
+  width: 1907px;
 }
