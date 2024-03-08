@@ -53,10 +53,27 @@ div#title div.text .tu a{
   border: 1px solid white;
   padding: 10px 20px;
 }
+.slick-prev, .slick-next{  
+  width: 50px !important;
+  height: 50px !important;
+  top: 40% !important;
+}
 .slick-next{
   right: 48px !important;
 }
 .slick-prev{
   left: 48px !important;
   z-index: 1;
+}
+.slick-prev::before, .slick-next::before{
+  color: transparent !important;
+  font-size: 50px !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.slick-prev::before {
+  background-image: url(../img/arrow_left.svg) !important;;
+}
+.slick-next::before{
+  background-image: url(../img/arrow_right.svg) !important;;
 }
