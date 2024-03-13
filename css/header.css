@@ -75,6 +75,9 @@ header .smenu{
   /*! left: calc(-20% + (-95.15px)); */
   z-index: 2;
 }
+body.noScroll header .smenu{
+  left: -105px;
+}
 header .smenu .menu1{
   
 }

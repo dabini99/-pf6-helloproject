@@ -1,10 +1,13 @@
 body{
    background-color: #f5f5f5;
 }
+.noScroll{
+   overflow: hidden;
+   margin-left: 17px;
+}
 .wrap{
    max-width: 1712.7px;
    margin: 0 auto;
-  
 }
 /* 패딩 */
 .padding50{

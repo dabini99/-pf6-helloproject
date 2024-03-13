@@ -36,6 +36,7 @@
                     $("header .smenu").show();
                     //배경 흐리게 만들기
                     $(".oc").show();
+                    $("body").addClass("noScroll")
                     return false;
                 });
                 //주변 누르면 서브메뉴 안보이게 하기
@@ -43,6 +44,7 @@
                     //서브메뉴 보이게 하기
                     $("header .smenu").hide();
                     $(".oc").hide();
+                    $("body").removeClass("noScroll")
                     return false;
                 });
                 $("header .smenu a.top").wrapAll("<div class='topAll'></div>");
@@ -56,7 +58,7 @@
                         $(this).children("ul").slideToggle();
                         $(this).siblings().children("ul").slideUp();
                         //플러스 버튼이 마이너스 버튼으로 변경
-                        $(this).toggleClass("subColor");
+                        // $(this).toggleClass("subColor");
                         
                     });
                 $(window).scroll(function(){
